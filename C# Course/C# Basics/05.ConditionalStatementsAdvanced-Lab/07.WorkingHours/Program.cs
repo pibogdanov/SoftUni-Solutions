@@ -19,7 +19,7 @@ namespace _07.WorkingHours
                 case "Friday":
                 case "Saturday":
                     {
-                        if (hours > 9 && hours < 19)
+                        if ( (hours > 9) && (hours < 19) )
                         {
                             Console.WriteLine("open");
                         }
@@ -36,6 +36,7 @@ namespace _07.WorkingHours
                     {
                         Console.WriteLine("closed");
                     }
+
                 break;
             }
         }

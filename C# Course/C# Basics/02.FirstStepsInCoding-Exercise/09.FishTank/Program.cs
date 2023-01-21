@@ -12,12 +12,11 @@ namespace _09.FishTank
 
             int heightCm = int.Parse(Console.ReadLine());
 
-            double percentOfUsedPlace = double.Parse(Console.ReadLine()) / 100;
-
             double volumeOfTheAquarium = lenghtCm * widthCm * heightCm;
 
             double volumeInLiters = volumeOfTheAquarium / 1000;
 
+            double percentOfUsedPlace = double.Parse(Console.ReadLine()) / 100;
             double lossLiters = volumeInLiters * percentOfUsedPlace;
 
             double neededLiters = volumeInLiters - lossLiters;

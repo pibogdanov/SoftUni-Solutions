@@ -10,21 +10,21 @@ namespace _06.Oscars
 
             double pointsFromTheAcademy = double.Parse(Console.ReadLine());
 
-            int numberOfPeopleGivingRates = int.Parse(Console.ReadLine());
+            int numberOfJuries = int.Parse(Console.ReadLine());
 
-            double points = 0;
+            double points;
 
-            for (int i = 0; i < numberOfPeopleGivingRates; i++)
+            for (int i = 0; i < numberOfJuries; i++)
             {
-                string nameOfAPersonGivingARate = Console.ReadLine();
+                string nameOfAJury = Console.ReadLine();
 
-                double pointsFromThePerson = double.Parse(Console.ReadLine());
+                double pointsFromAJury = double.Parse(Console.ReadLine());
 
-                pointsFromTheAcademy += ((nameOfAPersonGivingARate.Length * pointsFromThePerson) / 2);
+                pointsFromTheAcademy += nameOfAJury.Length * pointsFromAJury / 2;
 
                 points = pointsFromTheAcademy;
 
-                if (points >= 1250.5)
+                if (points > 1250.49)
                 {
                     break;
                 }
@@ -32,14 +32,14 @@ namespace _06.Oscars
 
             points = pointsFromTheAcademy;
 
-            if (points >= 1250.5)
+            if (points > 1250.49)
             {
                 Console.WriteLine($"Congratulations, {nameOfAnActor} got a nominee for leading role with {points:F1}!");
             }
 
             else
             {
-                double neededPoints = Math.Abs(1250.5 - points);
+                double neededPoints = 1250.5 - points;
                 Console.WriteLine($"Sorry, {nameOfAnActor} you need {neededPoints:F1} more!");
             }
         }

@@ -18,7 +18,7 @@ namespace _08.Graduation
             {
                 double currentGrade = double.Parse(Console.ReadLine());
 
-                if (currentGrade >= 4.00 && currentGrade <= 6.00)
+                if ( (currentGrade >= 4.00) && (currentGrade <= 6.00) )
                 {
                     grade++;
 

@@ -6,11 +6,11 @@ namespace _07.SumNumbers
     {
         static void Main(string[] args)
         {
-            int finalNumber = int.Parse(Console.ReadLine());
+            int numbersCount = int.Parse(Console.ReadLine());
 
             int sum = 0;
 
-            for (int i = 0; i < finalNumber; i++)
+            for (int i = 0; i < numbersCount; i++)
             {
                 int num = int.Parse(Console.ReadLine());
 

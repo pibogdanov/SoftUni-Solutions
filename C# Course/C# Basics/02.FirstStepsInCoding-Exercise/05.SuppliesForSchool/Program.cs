@@ -13,23 +13,20 @@ namespace _05.SuppliesForSchool
             double cleanerPerLitre = 1.2;
 
             int numberOfPacketsOfPens = int.Parse(Console.ReadLine());
-
-            int numberOfPacketsOfMarkers = int.Parse(Console.ReadLine());
-
-            int cleanerLitres = int.Parse(Console.ReadLine());
-
-            double discountPercent = double.Parse(Console.ReadLine()) / 100;
-
             double totalPacketsOfPens = numberOfPacketsOfPens * packetOfPens;
 
+            int numberOfPacketsOfMarkers = int.Parse(Console.ReadLine());
             double totalPacketsOfMarkers = numberOfPacketsOfMarkers * packetOfMarkers;
 
+            int cleanerLitres = int.Parse(Console.ReadLine());
             double totalCleanerLitres = cleanerLitres * cleanerPerLitre;
 
             double sum = totalPacketsOfPens + totalPacketsOfMarkers + totalCleanerLitres;
 
-            double sumWithDiscount = sum - (sum * discountPercent);
+            double discountPercent = double.Parse(Console.ReadLine()) / 100;
+            double discount = sum * discountPercent;
 
+            double sumWithDiscount = sum - discount;
             Console.WriteLine(sumWithDiscount);
         }
     }

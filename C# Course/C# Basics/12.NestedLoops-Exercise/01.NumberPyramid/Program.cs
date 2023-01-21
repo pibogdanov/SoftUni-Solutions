@@ -14,7 +14,7 @@ namespace _01.NumberPyramid
 
             for (int rows = 1; rows <= maxNumber; rows++)
             {
-                for (int cols = 1; cols <= rows; cols++)
+                for (int columns = 1; columns <= rows; columns++)
                 {
                     if (counter > maxNumber)
                     {

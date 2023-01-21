@@ -13,7 +13,6 @@ namespace _04.VacationBooksList
             int numberOfDays = int.Parse(Console.ReadLine());
 
             int hoursToRead = numberOfPages / pages / numberOfDays;
-
             Console.WriteLine(hoursToRead);
         }
     }

@@ -19,7 +19,7 @@ namespace _04.FishingBoat
                 price = 3000;
             }
 
-            else if (season == "Summer" || season == "Autumn")
+            else if ( (season == "Summer") || (season == "Autumn") )
             {
                 price = 4200;
             }
@@ -31,22 +31,22 @@ namespace _04.FishingBoat
 
             if (fishermenCount < 7)
             {
-                price -= price * 0.1;
+                price *= 0.9;
             }
 
             else if (fishermenCount < 12)
             {
-                price -= price * 0.15;
+                price *= 0.85;
             }
 
             else
             {
-                price -= price * 0.25;
+                price *= 0.75;
             }
 
-            if (season != "Autumn" && fishermenCount % 2 == 0)
+            if ( (season != "Autumn") && (fishermenCount % 2 == 0) )
             {
-                price -= price * 0.05;
+                price *= 0.95;
             }
 
             if (budget >= price)

@@ -10,86 +10,63 @@ namespace _07.HotelRoom
 
             int nightsCount = int.Parse(Console.ReadLine());
 
-            double studio = 0;
+            double studioTotalPrice = 0;
 
-            double studioPrice = 0;
+            double apartamentTotalPrice = 0;
 
-            double apartament = 0;
-
-            double apartamentPrice = 0;
-
-            if (season == "May" || season == "October")
+            if ( (season == "May") || (season == "October") )
             {
-                studio = 50;
+                double studioPrice = 50;
+                studioTotalPrice = studioPrice * nightsCount;
 
-                studioPrice = studio * nightsCount;
-
-                apartament = 65;
-
-                apartamentPrice = apartament * nightsCount;
-
-                if (nightsCount > 7 && nightsCount < 15)
-                {
-                    studio -= studio * 0.05;
-
-                    studioPrice = studio * nightsCount;
-                }
-
-                else if (nightsCount > 14)
-                {
-                    studio -= studio * 0.3;
-
-                    studioPrice = studio * nightsCount;
-
-                    apartament -= apartament * 0.1;
-
-                    apartamentPrice = apartament * nightsCount;
-                }
-            }
-
-            else if (season == "June" || season == "September")
-            {
-                studio = 75.2;
-
-                studioPrice = studio * nightsCount;
-
-                apartament = 68.7;
-
-                apartamentPrice = apartament * nightsCount;
+                double apartamentPrice = 65;
+                apartamentTotalPrice = apartamentPrice * nightsCount;
 
                 if (nightsCount > 14)
                 {
-                    studio -= studio * 0.2;
+                    studioTotalPrice *= 0.7;
 
-                    studioPrice = studio * nightsCount;
+                    apartamentTotalPrice *= 0.9;
+                }
 
-                    apartament -= apartament * 0.1;
-
-                    apartamentPrice = apartament * nightsCount;
+                else if (nightsCount > 7)
+                {
+                    studioTotalPrice *= 0.95;
                 }
             }
 
-            else if (season == "July" || season == "August")
+            else if ( (season == "June") || (season == "September") )
             {
-                studio = 76;
+                double studioPrice = 75.2;
+                studioTotalPrice = studioPrice * nightsCount;
 
-                studioPrice = studio * nightsCount;
-
-                apartament = 77;
-
-                apartamentPrice = apartament * nightsCount;
+                double apartamentPrice = 68.7;
+                apartamentTotalPrice = apartamentPrice * nightsCount;
 
                 if (nightsCount > 14)
                 {
-                    apartament -= apartament * 0.1;
+                    studioTotalPrice *= 0.8;
 
-                    apartamentPrice = apartament * nightsCount;
+                    apartamentTotalPrice *= 0.9;
                 }
             }
 
-            Console.WriteLine($"Apartment: {apartamentPrice:F2} lv.");
+            else if ( (season == "July") || (season == "August") )
+            {
+                double studioPrice = 76;
+                studioTotalPrice = studioPrice * nightsCount;
 
-            Console.WriteLine($"Studio: {studioPrice:F2} lv.");
+                double apartamentPrice = 77;
+                apartamentTotalPrice = apartamentPrice * nightsCount;
+
+                if (nightsCount > 14)
+                {
+                    apartamentTotalPrice *= 0.9;
+                }
+            }
+
+            Console.WriteLine($"Apartment: {apartamentTotalPrice:F2} lv.");
+            Console.WriteLine($"Studio: {studioTotalPrice:F2} lv.");
         }
     }
 }

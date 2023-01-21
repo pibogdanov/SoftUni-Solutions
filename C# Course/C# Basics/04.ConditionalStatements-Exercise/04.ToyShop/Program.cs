@@ -6,43 +6,38 @@ namespace _04.ToyShop
     {
         static void Main(string[] args)
         {
-            double puzzle = 2.6;
+            double puzzlePrice = 2.6;
 
-            double talkingDoll = 3.0;
+            double talkingDollPrice = 3;
 
-            double toyBear = 4.1;
+            double toyBearPrice = 4.1;
 
-            double minion = 8.2;
+            double minionPrice = 8.2;
 
-            double toyTruck = 2.0;
+            double toyTruckPrice = 2;
 
-            double trip = double.Parse(Console.ReadLine());
+            double tripPrice = double.Parse(Console.ReadLine());
 
             int numberOfPuzzles = int.Parse(Console.ReadLine());
+            double puzzles = numberOfPuzzles * puzzlePrice;
 
             int numberOfTalkingDolls = int.Parse(Console.ReadLine());
+            double talkingDolls = numberOfTalkingDolls * talkingDollPrice;
 
             int numberOfToyBears = int.Parse(Console.ReadLine());
+            double toyBears = numberOfToyBears * toyBearPrice;
 
             int numberOfMinions = int.Parse(Console.ReadLine());
+            double minions = numberOfMinions * minionPrice;
 
             int numberOfToyTrucks = int.Parse(Console.ReadLine());
+            double toyTrucks = numberOfToyTrucks * toyTruckPrice;
 
             int numberOfToys = numberOfPuzzles + numberOfTalkingDolls + numberOfToyBears + numberOfMinions + numberOfToyTrucks;
 
-            double puzzles = numberOfPuzzles * puzzle;
-
-            double talkingDolls = numberOfTalkingDolls * talkingDoll;
-
-            double toyBears = numberOfToyBears * toyBear;
-
-            double minions = numberOfMinions * minion;
-
-            double toyTrucks = numberOfToyTrucks * toyTruck;
-
             double totalPrice = puzzles + talkingDolls + toyBears + minions + toyTrucks;
 
-            if (numberOfToys >= 50)
+            if (numberOfToys > 49)
             {
                 double discount = 0.25 * totalPrice;
 
@@ -53,15 +48,15 @@ namespace _04.ToyShop
 
             totalPrice -= rent;
 
-            if (totalPrice >= trip)
+            if (totalPrice >= tripPrice)
             {
-                double profit = totalPrice - trip;
+                double profit = totalPrice - tripPrice;
                 Console.WriteLine($"Yes! {profit:F2} lv left.");
             }
 
             else
             {
-                double neededMoney = trip - totalPrice;
+                double neededMoney = tripPrice - totalPrice;
                 Console.WriteLine($"Not enough money! {neededMoney:F2} lv needed.");
             }
         }

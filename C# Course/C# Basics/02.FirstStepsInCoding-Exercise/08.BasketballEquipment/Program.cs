@@ -6,7 +6,7 @@ namespace _08.BasketballEquipment
     {
         static void Main(string[] args)
         {
-            double cost = int.Parse(Console.ReadLine());
+            int cost = int.Parse(Console.ReadLine());
 
             double basketballShoes = cost * 0.6;
 

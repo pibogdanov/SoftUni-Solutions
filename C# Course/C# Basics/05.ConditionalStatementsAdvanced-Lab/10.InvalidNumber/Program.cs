@@ -6,11 +6,9 @@ namespace _10.InvalidNumber
     {
         static void Main(string[] args)
         {
-            double num = double.Parse(Console.ReadLine());
+            double number = double.Parse(Console.ReadLine());
 
-            bool isTrue = (num > 99 && num < 201 || num == 0);
-
-            if (!isTrue)
+            if ( !( (number > 99 && number < 201) || (number == 0) ) )
             {
                 Console.WriteLine("invalid");
             }

@@ -6,30 +6,30 @@ namespace _05.Salary
     {
         static void Main(string[] args)
         {
-            int finalNumber = int.Parse(Console.ReadLine());
+            int numbersCount = int.Parse(Console.ReadLine());
 
             double salary = double.Parse(Console.ReadLine());
 
-            for (int i = 0; i < finalNumber; i++)
+            for (int i = 0; i < numbersCount; i++)
             {
-                string site = Console.ReadLine();
+                string website = Console.ReadLine();
 
-                if (site == "Facebook")
+                if (website == "Facebook")
                 {
                     salary -= 150;
                 }
 
-                else if (site == "Instagram")
+                else if (website == "Instagram")
                 {
                     salary -= 100;
                 }
 
-                else if (site == "Reddit")
+                else if (website == "Reddit")
                 {
                     salary -= 50;
                 }
 
-                if (salary <= 0)
+                if (salary < 1)
                 {
                     Console.WriteLine("You have lost your salary.");
 

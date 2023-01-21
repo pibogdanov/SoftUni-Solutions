@@ -6,13 +6,13 @@ namespace _02.HalfSumElement
     {
         static void Main(string[] args)
         {
-            int finalNumber = int.Parse(Console.ReadLine());
+            int numbersCount = int.Parse(Console.ReadLine());
 
             int sum = 0;
 
             int max = int.MinValue;
 
-            for (int i = 1; i <= finalNumber; i++)
+            for (int i = 1; i <= numbersCount; i++)
             {
                 int number = int.Parse(Console.ReadLine());
 
@@ -29,16 +29,13 @@ namespace _02.HalfSumElement
             if (sum == max)
             {
                 Console.WriteLine("Yes");
-
                 Console.WriteLine($"Sum = {sum}");
             }
 
             else
             {
                 int difference = Math.Abs(sum - max);
-
                 Console.WriteLine("No");
-
                 Console.WriteLine($"Diff = {difference}");
             }
         }

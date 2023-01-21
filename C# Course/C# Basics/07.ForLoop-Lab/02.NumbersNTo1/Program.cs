@@ -8,7 +8,7 @@ namespace _02.NumbersNTo1
         {
             int startingNumber = int.Parse(Console.ReadLine());
 
-            for (int i = startingNumber; i >= 1; i--)
+            for (int i = startingNumber; i > 0; i--)
             {
                 Console.WriteLine(i);
             }

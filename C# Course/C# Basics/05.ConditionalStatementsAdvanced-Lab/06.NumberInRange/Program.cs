@@ -6,11 +6,9 @@ namespace _06.NumberInRange
     {
         static void Main(string[] args)
         {
-            double num = double.Parse(Console.ReadLine());
+            double number = double.Parse(Console.ReadLine());
 
-            bool isTrue = num > - 101 && num != 0 && num < 101;
-
-            if (isTrue)
+            if ( (number > - 101) && (number != 0) && (number < 101) )
             {
                 Console.WriteLine("Yes");
             }

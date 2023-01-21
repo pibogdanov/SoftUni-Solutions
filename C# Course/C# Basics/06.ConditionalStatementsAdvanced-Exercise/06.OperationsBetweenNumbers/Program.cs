@@ -12,11 +12,9 @@ namespace _06.OperationsBetweenNumbers
 
             string calculationType = Console.ReadLine();
 
-            double result = 0;
-
             if (calculationType == "+")
             {
-                result = number1 + number2;
+                double result = number1 + number2;
 
                 if (result % 2 == 0)
                 {
@@ -31,7 +29,7 @@ namespace _06.OperationsBetweenNumbers
 
             else if (calculationType == "-")
             {
-                result = number1 - number2;
+                double result = number1 - number2;
 
                 if (result % 2 == 0)
                 {
@@ -46,7 +44,7 @@ namespace _06.OperationsBetweenNumbers
 
             else if (calculationType == "*")
             {
-                result = number1 * number2;
+                double result = number1 * number2;
 
                 if (result % 2 == 0)
                 {
@@ -68,7 +66,7 @@ namespace _06.OperationsBetweenNumbers
 
                 else
                 {
-                    result = number1 * 1.0 / number2;
+                    double result = number1 * 1.0 / number2;
                     Console.WriteLine($"{number1} / {number2} = {result:F2}");
                 }
             }
@@ -82,7 +80,7 @@ namespace _06.OperationsBetweenNumbers
 
                 else
                 {
-                    result = number1 % number2;
+                    double result = number1 % number2;
                     Console.WriteLine($"{number1} % {number2} = {result}");
                 }
             }

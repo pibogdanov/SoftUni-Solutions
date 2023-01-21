@@ -14,12 +14,12 @@ namespace _06.Cake
 
             string pieces;
 
-            while (piecesCount >= 0 && (pieces = Console.ReadLine()) != "STOP")
+            while ( (piecesCount > - 1) && ( ( pieces = Console.ReadLine() ) != "STOP") )
             {
                 piecesCount -= int.Parse(pieces);
             }
 
-            if (piecesCount >= 0)
+            if (piecesCount > - 1)
             {
                 Console.WriteLine($"{piecesCount} pieces are left.");
             }

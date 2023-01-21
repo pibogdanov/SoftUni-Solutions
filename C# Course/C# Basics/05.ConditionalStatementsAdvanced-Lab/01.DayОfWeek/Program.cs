@@ -6,9 +6,9 @@ namespace _01.DayОfWeek
     {
         static void Main(string[] args)
         {
-            int num = int.Parse(Console.ReadLine());
+            int choice = int.Parse(Console.ReadLine());
 
-            switch (num)
+            switch (choice)
             {
                 case 1:
                     {

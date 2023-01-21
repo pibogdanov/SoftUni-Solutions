@@ -8,25 +8,19 @@ namespace _07.Shopping
         {
             double budget = double.Parse(Console.ReadLine());
 
-            double videoCard = 250;
-
             int numberOfVideoCards = int.Parse(Console.ReadLine());
-
-            double videoCards = numberOfVideoCards * videoCard;
-
-            double processor = videoCards * 0.35;
+            double videoCardPrice = 250;
+            double videoCardsPrice = numberOfVideoCards * videoCardPrice;
 
             int numberOfProcessors = int.Parse(Console.ReadLine());
-
-            double processors = numberOfProcessors * processor;
-
-            double ram = videoCards * 0.1;
+            double processorPrice = videoCardsPrice * 0.35;
+            double processorsPrice = numberOfProcessors * processorPrice;
 
             int numberOfRams = int.Parse(Console.ReadLine());
+            double ramPrice = videoCardsPrice * 0.1;
+            double ramsPrice = numberOfRams * ramPrice;           
 
-            double rams = numberOfRams * ram;           
-
-            double totalPrice = videoCards + processors + rams;
+            double totalPrice = videoCardsPrice + processorsPrice + ramsPrice;
 
             if (numberOfProcessors < numberOfVideoCards)
             {

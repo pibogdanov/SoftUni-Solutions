@@ -6,33 +6,29 @@ namespace _07.FoodDelivery
     {
         static void Main(string[] args)
         {
-            double perChickenMenu = 10.35;
+            double chickenMenuPrice = 10.35;
 
-            double perFishMenu = 12.4;
+            double fishMenuPrice = 12.4;
 
-            double perVeganMenu = 8.15;
+            double veganMenuPrice = 8.15;
 
             double delivery = 2.5;
 
             int numberOfChickenMenu = int.Parse(Console.ReadLine());
+            double chickenMenuTotalPrice = numberOfChickenMenu * chickenMenuPrice;
 
             int numberOfFishMenu = int.Parse(Console.ReadLine());
+            double fishMenuTotalPrice = numberOfFishMenu * fishMenuPrice;
 
             int numberOfVeganMenu = int.Parse(Console.ReadLine());
+            double veganMenuTotalPrice = numberOfVeganMenu * veganMenuPrice;
 
-            double chickenMenu = numberOfChickenMenu * perChickenMenu;
+            double price = chickenMenuTotalPrice + fishMenuTotalPrice + veganMenuTotalPrice;
 
-            double fishMenu = numberOfFishMenu * perFishMenu;
+            double dessert = price * 0.2;
 
-            double veganMenu = numberOfVeganMenu * perVeganMenu;
-
-            double sum = chickenMenu + fishMenu + veganMenu;
-
-            double dessert = sum * 0.2;
-
-            double totalSum = sum + dessert + delivery;
-
-            Console.WriteLine(totalSum);
+            double totalPrice = price + dessert + delivery;
+            Console.WriteLine(totalPrice);
         }
     }
 }

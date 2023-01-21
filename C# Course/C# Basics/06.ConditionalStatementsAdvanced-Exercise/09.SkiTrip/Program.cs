@@ -31,21 +31,21 @@ namespace _09.SkiTrip
                 {
                     price = nightsCount * apartament;
 
-                    price -= price * 0.3;
+                    price *= 0.7;
                 }
 
                 else if (nightsCount < 16)
                 {
                     price = nightsCount * apartament;
 
-                    price -= price * 0.35;
+                    price *= 0.65;
                 }
 
                 else
                 {
                     price = nightsCount * apartament;
 
-                    price -= price * 0.5;
+                    price *= 0.5;
                 }
             }
 
@@ -55,21 +55,21 @@ namespace _09.SkiTrip
                 {
                     price = nightsCount * presidentApartament;
 
-                    price -= price * 0.1;
+                    price *= 0.9;
                 }
 
                 else if (nightsCount < 16)
                 {
                     price = nightsCount * presidentApartament;
 
-                    price -= price * 0.15;
+                    price *= 0.85;
                 }
 
                 else
                 {
                     price = nightsCount * presidentApartament;
 
-                    price -= price * 0.2;
+                    price *= 0.8;
                 }
             }
 
@@ -80,7 +80,7 @@ namespace _09.SkiTrip
 
             else if (feedback == "negative")
             {
-                price -= price * 0.1;
+                price *= 0.9;
             }
 
             Console.WriteLine($"{price:F2}");

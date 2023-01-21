@@ -10,27 +10,19 @@ namespace _03.Time_15Minutes
 
             int minutes = int.Parse(Console.ReadLine()) + 15;
 
-            if (minutes >= 60 )
+            if (minutes > 59 )
             {
                 hours += 1;
+
                 minutes -= 60;
             }
 
-            if (hours >= 24)
+            if (hours > 23)
             {
                 hours -= 24;
             }
-
-            if (minutes < 10)
-            {
-                Console.WriteLine($"{hours}:0{minutes}");
-            }
-
-            else
-            {
-                Console.WriteLine($"{hours}:{minutes}");
-            }
-
+            
+            Console.WriteLine($"{hours}:{minutes:D2}");
         }
     }
 }

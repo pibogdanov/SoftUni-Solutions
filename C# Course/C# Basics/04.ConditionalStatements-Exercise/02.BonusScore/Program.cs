@@ -8,9 +8,9 @@ namespace _02.BonusScore
         {
             int points = int.Parse(Console.ReadLine());
 
-            double bonus = 0;
+            double bonus;
 
-            if (points <= 100)
+            if (points < 101)
             {
                 bonus = 5;
             }
@@ -38,7 +38,6 @@ namespace _02.BonusScore
             Console.WriteLine(bonus);
 
             double totalPoints = points + bonus;
-
             Console.WriteLine(totalPoints);
         }
     }

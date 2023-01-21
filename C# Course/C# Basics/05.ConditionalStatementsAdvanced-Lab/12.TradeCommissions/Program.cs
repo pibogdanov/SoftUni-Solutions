@@ -10,17 +10,15 @@ namespace _12.TradeCommissions
 
             double selling = double.Parse(Console.ReadLine());
 
-            double percentDifference = 0;
-
-            double totalSelling = 0;
-
-            bool isTrue = selling < 0;
-
-            if (!isTrue)
+            if (selling > 0)
             {
+                double percentDifference;
+
+                double totalSelling = 0;
+
                 if (city == "Sofia")
                 {
-                    if (selling >= 0 && selling < 501)
+                    if ( (selling >= 0) && (selling < 501) )
                     {
                         percentDifference = selling * 0.05;
                     }
@@ -50,7 +48,7 @@ namespace _12.TradeCommissions
 
                 else if (city == "Varna")
                 {
-                    if (selling >= 0 && selling < 501)
+                    if ( (selling >= 0) && (selling < 501) )
                     {
                         percentDifference = selling * 0.045;
                     }
@@ -80,7 +78,7 @@ namespace _12.TradeCommissions
 
                 else if (city == "Plovdiv")
                 {
-                    if (selling >= 0 && selling < 501)
+                    if ( (selling >= 0) && (selling < 501) )
                     {
                         percentDifference = selling * 0.055;
                     }

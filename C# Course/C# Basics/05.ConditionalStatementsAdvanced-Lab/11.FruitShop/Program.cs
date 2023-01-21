@@ -14,9 +14,7 @@ namespace _11.FruitShop
 
             double price = 0;
 
-            double totalPrice = 0;
-
-            if (dayOfTheWeek == "Monday" || dayOfTheWeek == "Tuesday" || dayOfTheWeek == "Wednesday" || dayOfTheWeek == "Thursday" || dayOfTheWeek == "Friday")
+            if ( (dayOfTheWeek == "Monday") || (dayOfTheWeek == "Tuesday") || (dayOfTheWeek == "Wednesday") || (dayOfTheWeek == "Thursday") || (dayOfTheWeek == "Friday") )
             {
                 if (fruit == "banana")
                 {
@@ -59,7 +57,7 @@ namespace _11.FruitShop
                 }
             }
 
-            else if (dayOfTheWeek == "Saturday" || dayOfTheWeek == "Sunday")
+            else if ( (dayOfTheWeek == "Saturday") || (dayOfTheWeek == "Sunday") )
             {
                 if (fruit == "banana")
                 {
@@ -107,7 +105,7 @@ namespace _11.FruitShop
                 Console.WriteLine("error");
             }
 
-            totalPrice = price * numberOfFruits;
+            double totalPrice = price * numberOfFruits;
 
             if (totalPrice > 0)
             {

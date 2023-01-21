@@ -8,7 +8,7 @@ namespace _05.Travelling
         {
             string destination;
 
-            while ( (destination = Console.ReadLine()) != "End" )
+            while ( ( destination = Console.ReadLine() ) != "End" )
             {
                 double budget = double.Parse(Console.ReadLine());
 

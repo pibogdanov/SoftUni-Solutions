@@ -6,22 +6,20 @@ namespace _09.LeftAndRightSum
     {
         static void Main(string[] args)
         {
-            int finalNumber = int.Parse(Console.ReadLine()); 
+            int numbersCount = int.Parse(Console.ReadLine()); 
 
             int sumLeft = 0;
 
             int sumRight = 0;
 
-            int difference = 0;
-
-            for (int i = 0; i < finalNumber; i++)
+            for (int i = 0; i < numbersCount; i++)
             {
                 int number = int.Parse(Console.ReadLine());
 
                 sumLeft += number;
             }
 
-            for (int i = 0; i < finalNumber; i++)
+            for (int j = 0; j < numbersCount; j++)
             {
                 int number = int.Parse(Console.ReadLine());
 
@@ -35,7 +33,7 @@ namespace _09.LeftAndRightSum
 
             else
             {
-                difference = Math.Abs(sumRight - sumLeft);
+                int difference = Math.Abs(sumRight - sumLeft);
                 Console.WriteLine($"No, diff = {difference}");
             }
         }

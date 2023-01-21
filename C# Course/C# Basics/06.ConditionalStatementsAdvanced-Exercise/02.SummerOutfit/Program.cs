@@ -8,11 +8,11 @@ namespace _02.SummerOutfit
         {
             int degrees = int.Parse(Console.ReadLine());
 
-            string dayType = Console.ReadLine();
+            string timeOfTheDay = Console.ReadLine();
 
-            if (dayType == "Morning")
+            if (timeOfTheDay == "Morning")
             {
-                if (degrees > 9 && degrees < 19)
+                if ( (degrees > 9) && (degrees < 19) )
                 {
                     Console.WriteLine($"It's {degrees} degrees, get your Sweatshirt and Sneakers.");
                 }
@@ -28,9 +28,9 @@ namespace _02.SummerOutfit
                 }
             }
 
-            else if (dayType == "Afternoon")
+            else if (timeOfTheDay == "Afternoon")
             {
-                if (degrees > 9 && degrees < 19)
+                if ( (degrees > 9) && (degrees < 19) )
                 {
                     Console.WriteLine($"It's {degrees} degrees, get your Shirt and Moccasins.");
                 }
@@ -46,9 +46,9 @@ namespace _02.SummerOutfit
                 }
             }
 
-            else if (dayType == "Evening")
+            else if (timeOfTheDay == "Evening")
             {
-                if (degrees > 9 && degrees < 19)
+                if ( (degrees > 9) && (degrees < 19) )
                 {
                     Console.WriteLine($"It's {degrees} degrees, get your Shirt and Moccasins.");
                 }

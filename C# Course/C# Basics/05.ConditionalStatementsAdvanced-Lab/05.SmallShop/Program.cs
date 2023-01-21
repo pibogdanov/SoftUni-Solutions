@@ -12,45 +12,35 @@ namespace _05.SmallShop
 
             double numberOfProducts = double.Parse(Console.ReadLine());
 
-            double coffee = 0;
-
-            double water = 0;
-
-            double beer = 0;
-
-            double sweets = 0;
-
-            double peanuts = 0;
-
             if (city == "Sofia")
             {
                 if (productType == "coffee")
                 {
-                    coffee = numberOfProducts * 0.5;
+                    double coffee = numberOfProducts * 0.5;
                     Console.WriteLine(coffee);
                 }
 
                 else if (productType == "water")
                 {
-                    water = numberOfProducts * 0.8;
+                    double water = numberOfProducts * 0.8;
                     Console.WriteLine(water);
                 }
 
                 else if (productType == "beer")
                 {
-                    beer = numberOfProducts * 1.2;
+                    double beer = numberOfProducts * 1.2;
                     Console.WriteLine(beer);
                 }
 
                 else if (productType == "sweets")
                 {
-                    sweets = numberOfProducts * 1.45;
+                    double sweets = numberOfProducts * 1.45;
                     Console.WriteLine(sweets);
                 }
 
                 else if (productType == "peanuts")
                 {
-                    peanuts = numberOfProducts * 1.6;
+                    double peanuts = numberOfProducts * 1.6;
                     Console.WriteLine(peanuts);
                 }
             }
@@ -59,31 +49,31 @@ namespace _05.SmallShop
             {
                 if (productType == "coffee")
                 {
-                    coffee = numberOfProducts * 0.4;
+                    double coffee = numberOfProducts * 0.4;
                     Console.WriteLine(coffee);
                 }
 
                 else if (productType == "water")
                 {
-                    water = numberOfProducts * 0.7;
+                    double water = numberOfProducts * 0.7;
                     Console.WriteLine(water);
                 }
 
                 else if (productType == "beer")
                 {
-                    beer = numberOfProducts * 1.15;
+                    double beer = numberOfProducts * 1.15;
                     Console.WriteLine(beer);
                 }
 
                 else if (productType == "sweets")
                 {
-                    sweets = numberOfProducts * 1.3;
+                    double sweets = numberOfProducts * 1.3;
                     Console.WriteLine(sweets);
                 }
 
                 else if (productType == "peanuts")
                 {
-                    peanuts = numberOfProducts * 1.5;
+                    double peanuts = numberOfProducts * 1.5;
                     Console.WriteLine(peanuts);
                 }
             }
@@ -92,31 +82,31 @@ namespace _05.SmallShop
             {
                 if (productType == "coffee")
                 {
-                    coffee = numberOfProducts * 0.45;
+                    double coffee = numberOfProducts * 0.45;
                     Console.WriteLine(coffee);
                 }
 
                 else if (productType == "water")
                 {
-                    water = numberOfProducts * 0.7;
+                    double water = numberOfProducts * 0.7;
                     Console.WriteLine(water);
                 }
 
                 else if (productType == "beer")
                 {
-                    beer = numberOfProducts * 1.1;
+                    double beer = numberOfProducts * 1.1;
                     Console.WriteLine(beer);
                 }
 
                 else if (productType == "sweets")
                 {
-                    sweets = numberOfProducts * 1.35;
+                    double sweets = numberOfProducts * 1.35;
                     Console.WriteLine(sweets);
                 }
 
                 else if (productType == "peanuts")
                 {
-                    peanuts = numberOfProducts * 1.55;
+                    double peanuts = numberOfProducts * 1.55;
                     Console.WriteLine(peanuts);
                 }
             }

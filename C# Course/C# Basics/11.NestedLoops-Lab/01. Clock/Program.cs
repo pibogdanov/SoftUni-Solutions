@@ -6,17 +6,13 @@ namespace _01.Clock
     {
         static void Main(string[] args)
         {
-            int hour = 0;
-
-            int minute = 0;
-
-            for (int h = 0; h < 24; h++)
+            for (int hours = 0; hours < 24; hours++)
             {
-                hour = h % 24;
+                int hour = hours % 24;
 
-                for (int m = 0; m < 60; m++)
+                for (int minutes = 0; minutes < 60; minutes++)
                 {
-                    minute = m % 60;
+                    int minute = minutes % 60;
                     
                     Console.WriteLine($"{hour}:{minute}");
                 }

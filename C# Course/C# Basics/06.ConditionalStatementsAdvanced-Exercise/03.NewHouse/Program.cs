@@ -12,75 +12,70 @@ namespace _03.NewHouse
 
             int budget = int.Parse(Console.ReadLine());
 
-            double rose = 5;
+            double rosePrice = 5;
+            double rosesTotalPrice = flowerCount * rosePrice;
 
-            double dahlia = 3.8;
+            double dahliaPrice = 3.8;
+            double dahliasTotalPrice = flowerCount * dahliaPrice;
 
-            double tulip = 2.8;
+            double tulipPrice = 2.8;
+            double tulipsTotalPrice = flowerCount * tulipPrice;
 
-            double narcissus = 3;
+            double narcissusesPrice = 3;
+            double narcissusesTotalPrice = flowerCount * narcissusesPrice;
 
-            double gladioli = 2.5;
-
-            double roses = flowerCount * rose;
-
-            double dahlias = flowerCount * dahlia;
-
-            double tulips = flowerCount * tulip;
-
-            double narcissuses = flowerCount * narcissus;
-
-            double gladioluses = flowerCount * gladioli;
+            double gladiolusPrice = 2.5;
+            double gladiolusTotalPrice = flowerCount * gladiolusPrice;
 
             double totalPrice = 0;
 
             if (flowerType == "Roses")
             {
-                totalPrice = roses;
+                totalPrice = rosesTotalPrice;
 
                 if (flowerCount > 80)
                 {
-                    totalPrice -= roses * 0.1;
+                    totalPrice *= 0.9;
                 }
             }
 
             else if (flowerType == "Dahlias")
             {
-                totalPrice = dahlias;
+                totalPrice = dahliasTotalPrice;
 
                 if (flowerCount > 90)
                 {
-                    totalPrice -= dahlias * 0.15;
+                    totalPrice *= 0.85;
                 }
             }
 
             else if (flowerType == "Tulips")
             {
-                totalPrice = tulips;
+                totalPrice = tulipsTotalPrice;
 
                 if (flowerCount > 90)
                 {
-                    totalPrice -= tulips * 0.15;
+                    totalPrice *= 0.85;
                 }
             }
 
             else if (flowerType == "Narcissus")
             {
-                totalPrice = narcissuses;
+                totalPrice = narcissusesTotalPrice;
 
                 if (flowerCount < 120)
                 {
-                    totalPrice += narcissuses * 0.15;
+                    totalPrice += narcissusesTotalPrice * 0.15;
                 }
             }
 
             else if (flowerType == "Gladiolus")
             {
-                totalPrice = gladioluses;
+                totalPrice = gladiolusTotalPrice;
 
                 if (flowerCount < 80)
                 {
-                    totalPrice += gladioluses * 0.2;
+                    totalPrice += gladiolusTotalPrice * 0.2;
                 }
             }
 

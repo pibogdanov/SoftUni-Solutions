@@ -6,9 +6,9 @@ namespace _04.EvenPowersOf2
     {
         static void Main(string[] args)
         {
-            int finalNumber = int.Parse(Console.ReadLine());
+            int numbersCount = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i <= finalNumber; i += 2)
+            for (int i = 0; i <= numbersCount; i += 2)
             {
                 Console.WriteLine(Math.Pow(2, i));
             }

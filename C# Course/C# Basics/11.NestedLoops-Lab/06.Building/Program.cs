@@ -10,7 +10,7 @@ namespace _06.Building
 
             int rooms = int.Parse(Console.ReadLine());
 
-            for (int i = floors; i >= 1; i--)
+            for (int i = floors; i > 0; i--)
             {
                 for (int j = 0; j < rooms; j++)
                 {

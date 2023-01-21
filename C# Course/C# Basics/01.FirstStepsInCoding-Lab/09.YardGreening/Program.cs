@@ -15,7 +15,6 @@ namespace _09.YardGreening
             double discount = greeningSquareMeters * 0.18;
 
             double greeningSquareMetersWithDiscount = greeningSquareMeters - discount;
-
             Console.WriteLine($"The final price is {greeningSquareMetersWithDiscount} lv.");
 
             Console.WriteLine($"The discount is: {discount} lv.");

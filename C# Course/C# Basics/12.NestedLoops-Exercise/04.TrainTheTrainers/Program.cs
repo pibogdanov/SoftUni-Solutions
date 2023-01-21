@@ -22,9 +22,8 @@ namespace _04.TrainTheTrainers
             {
                 if (presentationType == "Finish")
                 {
-                    double totalAverage = sum / totalGradeCount;
-
-                    Console.WriteLine($"Student's final assessment is {totalAverage:F2}.");
+                    double average = sum / totalGradeCount;
+                    Console.WriteLine($"Student's final assessment is {average:F2}.");
 
                     break;
                 }

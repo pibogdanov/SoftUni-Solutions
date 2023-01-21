@@ -12,7 +12,7 @@ namespace _03.SumPrimeNonPrime
 
             string command;
 
-            while ( (command = Console.ReadLine()) != "stop" )
+            while ( ( command = Console.ReadLine() ) != "stop" )
             {
                 int currentNumber = int.Parse(command);
 
@@ -54,7 +54,6 @@ namespace _03.SumPrimeNonPrime
             }
 
             Console.WriteLine($"Sum of all prime numbers is: {sumPrime}");
-
             Console.WriteLine($"Sum of all non prime numbers is: {sumNonPrime}");
         }
     }

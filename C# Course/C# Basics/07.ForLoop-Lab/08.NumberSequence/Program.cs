@@ -6,13 +6,13 @@ namespace _08.NumberSequence
     {
         static void Main(string[] args)
         {
-            int finalNumber = int.Parse(Console.ReadLine());
+            int numbersCount = int.Parse(Console.ReadLine());
 
             int minNumber = int.MaxValue;
 
             int maxNumber = int.MinValue;
 
-            for (int i = 0; i < finalNumber; i++)
+            for (int i = 0; i < numbersCount; i++)
             {
                 int number = int.Parse(Console.ReadLine());
 

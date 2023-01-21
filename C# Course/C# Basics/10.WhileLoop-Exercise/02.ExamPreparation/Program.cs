@@ -27,7 +27,7 @@ namespace _02.ExamPreparation
 
                 double grade = double.Parse(Console.ReadLine());
 
-                if (grade <= 4.00 && grade >= 2.00)
+                if ( (2.00 <= grade) && (grade <= 4.00) )
                 {
                     numberOfFailedExams++;
                 }

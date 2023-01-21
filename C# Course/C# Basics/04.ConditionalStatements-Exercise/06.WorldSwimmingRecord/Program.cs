@@ -6,6 +6,10 @@ namespace _06.WorldSwimmingRecord
     {
         static void Main(string[] args)
         {
+            int resistancePerMeters = 15;
+
+            double resistanceSeconds = 12.5;
+
             double record = double.Parse(Console.ReadLine());
 
             double meters = double.Parse(Console.ReadLine());
@@ -14,11 +18,9 @@ namespace _06.WorldSwimmingRecord
 
             double seconds = secondsForOneMeter * meters;
 
-            double waterResistance = Math.Floor((meters / 15));
+            double waterResistance = Math.Floor(meters / resistancePerMeters);
 
-            double secondsSlowerFromTheWaterResistance = 12.5;
-
-            double secondsSlowed = waterResistance * secondsSlowerFromTheWaterResistance;
+            double secondsSlowed = waterResistance * resistanceSeconds;
 
             double totalSeconds = seconds + secondsSlowed;
 

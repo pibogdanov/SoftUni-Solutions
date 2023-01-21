@@ -6,9 +6,9 @@ namespace _03.Numbers1ToNWithStep3
     {
         static void Main(string[] args)
         {
-            int finalNumber = int.Parse(Console.ReadLine());
+            int numbersCount = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i <= finalNumber; i += 3)
+            for (int i = 1; i <= numbersCount; i += 3)
             {
                 Console.WriteLine(i);
             }

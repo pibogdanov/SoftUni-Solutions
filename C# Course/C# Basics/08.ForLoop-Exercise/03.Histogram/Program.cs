@@ -6,67 +6,62 @@ namespace _03.Histogram
     {
         static void Main(string[] args)
         {
-            int finalNumber = int.Parse(Console.ReadLine());
+            int numbersCount = int.Parse(Console.ReadLine());
 
-            int d1 = 0;
+            int fieldOne = 0;
 
-            int d2 = 0;
+            int fieldTwo = 0;
 
-            int d3 = 0;
+            int fieldThree = 0;
 
-            int d4 = 0;
+            int fieldFour = 0;
 
-            int d5 = 0;
+            int fieldFive = 0;
 
-            for (int i = 0; i < finalNumber; i++)
+            for (int i = 0; i < numbersCount; i++)
             {
                 int number = int.Parse(Console.ReadLine());
 
                 if (number < 200)
                 {
-                    d1++;
+                    fieldOne++;
                 }
 
                 else if (number < 400)
                 {
-                    d2++;
+                    fieldTwo++;
                 }
 
                 else if (number < 600)
                 {
-                    d3++;
+                    fieldThree++;
                 }
 
                 else if (number < 800)
                 {
-                    d4++;
+                    fieldFour++;
                 }
 
                 else
                 {
-                    d5++;
+                    fieldFive++;
                 }
             }
 
-            double p1 = 100.0 * d1 / finalNumber;
+            double fieldOnePercent = 100.0 * fieldOne / numbersCount;
+            Console.WriteLine($"{fieldOnePercent:F2}%");
 
-            double p2 = 100.0 * d2 / finalNumber;
+            double fieldTwoPercent = 100.0 * fieldTwo / numbersCount;
+            Console.WriteLine($"{fieldTwoPercent:F2}%");
 
-            double p3 = 100.0 * d3 / finalNumber;
+            double fieldThreePercent = 100.0 * fieldThree / numbersCount;
+            Console.WriteLine($"{fieldThreePercent:F2}%");
 
-            double p4 = 100.0 * d4 / finalNumber;
+            double fieldFourPercent = 100.0 * fieldFour / numbersCount;
+            Console.WriteLine($"{fieldFourPercent:F2}%");
 
-            double p5 = 100.0 * d5 / finalNumber;
-
-            Console.WriteLine($"{p1:F2}%");
-
-            Console.WriteLine($"{p2:F2}%");
-
-            Console.WriteLine($"{p3:F2}%");
-
-            Console.WriteLine($"{p4:F2}%");
-
-            Console.WriteLine($"{p5:F2}%");
+            double fieldFivePercent = 100.0 * fieldFive / numbersCount;
+            Console.WriteLine($"{fieldFivePercent:F2}%");
         }
     }
 }

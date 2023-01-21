@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Numerics;
 
 namespace _07.TrekkingMania
 {
@@ -9,15 +8,15 @@ namespace _07.TrekkingMania
         {
             int numberOfGroups = int.Parse(Console.ReadLine());
 
-            int musalla = 0;
+            int musallaCounter = 0;
 
-            int montBlanc = 0;
+            int montBlancCounter = 0;
 
-            int kilimanjaro = 0;
+            int kilimanjaroCounter = 0;
 
-            int k2 = 0;
+            int k2Counter = 0;
 
-            int everest = 0;
+            int everestCounter = 0;
 
             for (int i = 0; i < numberOfGroups; i++)
             {
@@ -25,50 +24,45 @@ namespace _07.TrekkingMania
 
                 if (numberOfPeopleInAGroup < 6)
                 {
-                    musalla += numberOfPeopleInAGroup;
+                    musallaCounter += numberOfPeopleInAGroup;
                 }
 
                 else if (numberOfPeopleInAGroup < 13)
                 {
-                    montBlanc += numberOfPeopleInAGroup;
+                    montBlancCounter += numberOfPeopleInAGroup;
                 }
 
                 else if (numberOfPeopleInAGroup < 26)
                 {
-                    kilimanjaro += numberOfPeopleInAGroup;
+                    kilimanjaroCounter += numberOfPeopleInAGroup;
                 }
 
                 else if (numberOfPeopleInAGroup < 41)
                 {
-                    k2 += numberOfPeopleInAGroup;
+                    k2Counter += numberOfPeopleInAGroup;
                 }
 
                 else
                 {
-                    everest += numberOfPeopleInAGroup;
+                    everestCounter += numberOfPeopleInAGroup;
                 }
             }
 
-            double totalCount = musalla + montBlanc + kilimanjaro + k2 + everest;
+            int totalCounter = musallaCounter + montBlancCounter + kilimanjaroCounter + k2Counter + everestCounter;
 
-            double musallaPercent = 100 * musalla / totalCount;
-
-            double montBlancPercent = 100 * montBlanc / totalCount;
-
-            double kilimanjaroPercent = 100 * kilimanjaro / totalCount;
-
-            double k2Percent = 100 * k2 / totalCount;
-
-            double everestPercent = 100 * everest / totalCount;
-
+            double musallaPercent = 100.0 * musallaCounter / totalCounter;
             Console.WriteLine($"{musallaPercent:F2}%");
 
+            double montBlancPercent = 100.0 * montBlancCounter / totalCounter;
             Console.WriteLine($"{montBlancPercent:F2}%");
 
+            double kilimanjaroPercent = 100.0 * kilimanjaroCounter / totalCounter;
             Console.WriteLine($"{kilimanjaroPercent:F2}%");
 
+            double k2Percent = 100.0 * k2Counter / totalCounter;
             Console.WriteLine($"{k2Percent:F2}%");
 
+            double everestPercent = 100.0 * everestCounter / totalCounter;
             Console.WriteLine($"{everestPercent:F2}%");
         }
     }

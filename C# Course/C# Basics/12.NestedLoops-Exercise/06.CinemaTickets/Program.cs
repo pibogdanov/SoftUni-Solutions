@@ -14,7 +14,7 @@ namespace _06.CinemaTickets
 
             int kidTickets = 0;
 
-            while ( (movieName = Console.ReadLine()) != "Finish" )
+            while ( ( movieName = Console.ReadLine() ) != "Finish" )
             {
                 int freeSeats = int.Parse(Console.ReadLine());
 
@@ -22,7 +22,7 @@ namespace _06.CinemaTickets
 
                 string ticketType;
 
-                while (takenSeats < freeSeats && (ticketType = Console.ReadLine()) != "End")
+                while ( (takenSeats < freeSeats) && ( ( ticketType = Console.ReadLine() ) != "End") )
                 {
                     takenSeats++;
 

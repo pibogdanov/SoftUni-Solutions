@@ -12,8 +12,11 @@ namespace _03.DepositCalculator
 
             double percentPerYear = double.Parse(Console.ReadLine()) / 100;
 
-            double sum = depositValue + (deadline * (depositValue * percentPerYear / 12));
+            double depositValueWithPercentPerYear = depositValue * percentPerYear / 12;
 
+            double deadlineWithDepositValueWithPercentPerYear = deadline * depositValueWithPercentPerYear;
+
+            double sum = depositValue + deadlineWithDepositValueWithPercentPerYear;
             Console.WriteLine(sum);
         }
     }

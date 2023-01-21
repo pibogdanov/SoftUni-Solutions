@@ -13,7 +13,7 @@ namespace _05.Number100To200
                 Console.WriteLine("Less than 100");
             }
 
-            else if (a <= 200)
+            else if (a < 201)
             {
                 Console.WriteLine("Between 100 and 200");
             }
