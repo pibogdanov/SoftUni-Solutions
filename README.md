@@ -1,4 +1,4 @@
 # SoftUni-CSharp
-CSharp solutions
+Solutions
 
-Here can be found all the solutions from the SoftUni's C# course.
+Here can be found some solutions from the SoftUni's courses.
