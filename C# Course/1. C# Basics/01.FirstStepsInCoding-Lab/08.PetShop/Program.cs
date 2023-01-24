@@ -19,7 +19,6 @@ namespace _08.PetShop
             double catFoodTotalPrice = catFoodPrice * catFoodCount;
 
             double totalPrice = dogFoodTotalPrice + catFoodTotalPrice;
-
             Console.WriteLine($"{totalPrice} lv.");
         }
     }

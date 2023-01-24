@@ -54,6 +54,7 @@ namespace _03.SumPrimeNonPrime
             }
 
             Console.WriteLine($"Sum of all prime numbers is: {sumPrime}");
+
             Console.WriteLine($"Sum of all non prime numbers is: {sumNonPrime}");
         }
     }

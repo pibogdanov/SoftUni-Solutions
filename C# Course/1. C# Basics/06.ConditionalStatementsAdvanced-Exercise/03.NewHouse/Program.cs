@@ -12,25 +12,13 @@ namespace _03.NewHouse
 
             int budget = int.Parse(Console.ReadLine());
 
-            double rosePrice = 5;
-            double rosesTotalPrice = flowerCount * rosePrice;
-
-            double dahliaPrice = 3.8;
-            double dahliasTotalPrice = flowerCount * dahliaPrice;
-
-            double tulipPrice = 2.8;
-            double tulipsTotalPrice = flowerCount * tulipPrice;
-
-            double narcissusesPrice = 3;
-            double narcissusesTotalPrice = flowerCount * narcissusesPrice;
-
-            double gladiolusPrice = 2.5;
-            double gladiolusTotalPrice = flowerCount * gladiolusPrice;
-
             double totalPrice = 0;
 
             if (flowerType == "Roses")
             {
+                double rosePrice = 5;
+                double rosesTotalPrice = flowerCount * rosePrice;
+
                 totalPrice = rosesTotalPrice;
 
                 if (flowerCount > 80)
@@ -41,6 +29,9 @@ namespace _03.NewHouse
 
             else if (flowerType == "Dahlias")
             {
+                double dahliaPrice = 3.8;
+                double dahliasTotalPrice = flowerCount * dahliaPrice;
+
                 totalPrice = dahliasTotalPrice;
 
                 if (flowerCount > 90)
@@ -51,6 +42,9 @@ namespace _03.NewHouse
 
             else if (flowerType == "Tulips")
             {
+                double tulipPrice = 2.8;
+                double tulipsTotalPrice = flowerCount * tulipPrice;
+
                 totalPrice = tulipsTotalPrice;
 
                 if (flowerCount > 90)
@@ -61,6 +55,9 @@ namespace _03.NewHouse
 
             else if (flowerType == "Narcissus")
             {
+                double narcissusesPrice = 3;
+                double narcissusesTotalPrice = flowerCount * narcissusesPrice;
+
                 totalPrice = narcissusesTotalPrice;
 
                 if (flowerCount < 120)
@@ -71,6 +68,9 @@ namespace _03.NewHouse
 
             else if (flowerType == "Gladiolus")
             {
+                double gladiolusPrice = 2.5;
+                double gladiolusTotalPrice = flowerCount * gladiolusPrice;
+
                 totalPrice = gladiolusTotalPrice;
 
                 if (flowerCount < 80)

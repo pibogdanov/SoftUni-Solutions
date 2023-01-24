@@ -14,8 +14,6 @@ namespace _12.TradeCommissions
             {
                 double percentDifference;
 
-                double totalSelling = 0;
-
                 if (city == "Sofia")
                 {
                     if ( (selling >= 0) && (selling < 501) )
@@ -113,7 +111,7 @@ namespace _12.TradeCommissions
                     return;
                 }
 
-                totalSelling -= percentDifference;
+                double totalSelling = percentDifference;
                 Console.WriteLine($"{Math.Abs(totalSelling):F2}");
             }
 

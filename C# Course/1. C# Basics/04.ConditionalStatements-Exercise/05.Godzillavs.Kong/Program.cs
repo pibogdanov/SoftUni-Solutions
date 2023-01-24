@@ -18,9 +18,7 @@ namespace _05.Godzillavs.Kong
 
             if (numberOfActors > 149)
             {
-                double discount = 0.1 * outfitsPrice;
-
-                outfitsPrice -= discount;
+                outfitsPrice *= 0.9;
             }
             
             double totalPrice = decorPrice + outfitsPrice;

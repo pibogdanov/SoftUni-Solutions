@@ -12,21 +12,19 @@ namespace _09.SkiTrip
 
             string feedback = Console.ReadLine();
 
-            double roomForOnePerson = 18;
-
-            double apartament = 25;
-
-            double presidentApartament = 35;
-
             double price = 0;
 
             if (roomType == "room for one person")
             {
+                double roomForOnePerson = 18;
+
                 price = nightsCount * roomForOnePerson;
             }
 
             else if (roomType == "apartment")
             {
+                double apartament = 25;
+
                 if (nightsCount < 11)
                 {
                     price = nightsCount * apartament;
@@ -51,6 +49,8 @@ namespace _09.SkiTrip
 
             else if (roomType == "president apartment")
             {
+                double presidentApartament = 35;
+
                 if (nightsCount < 11)
                 {
                     price = nightsCount * presidentApartament;

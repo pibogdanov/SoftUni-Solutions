@@ -12,9 +12,9 @@ namespace _08.LunchBreak
 
             int freeTime = int.Parse(Console.ReadLine());
 
-            double lunch = freeTime * 1 / 8.0;
+            double lunch = freeTime * 0.125;
 
-            double breakTime = freeTime * 1 / 4.0;
+            double breakTime = freeTime * 0.25;
 
             double totalTime = freeTime - lunch - breakTime;
 

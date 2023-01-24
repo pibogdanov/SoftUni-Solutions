@@ -12,7 +12,7 @@ namespace _03.GamingStore
 
             double moneyLeft = budget;
 
-            while ((input = Console.ReadLine()) != "Game Time")
+            while ( ( input = Console.ReadLine() ) != "Game Time")
             {
                 if (input == "OutFall 4")
                 {

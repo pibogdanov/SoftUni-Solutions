@@ -8,25 +8,25 @@ namespace _09.LeftAndRightSum
         {
             int numbersCount = int.Parse(Console.ReadLine()); 
 
-            int sumLeft = 0;
-
             int sumRight = 0;
 
+            int sumLeft = 0;
+
             for (int i = 0; i < numbersCount; i++)
-            {
-                int number = int.Parse(Console.ReadLine());
-
-                sumLeft += number;
-            }
-
-            for (int j = 0; j < numbersCount; j++)
             {
                 int number = int.Parse(Console.ReadLine());
 
                 sumRight += number;
             }
 
-            if (sumLeft == sumRight)
+            for (int j = 0; j < numbersCount; j++)
+            {
+                int number = int.Parse(Console.ReadLine());
+
+                sumLeft += number;
+            }
+
+            if (sumRight == sumLeft)
             {
                 Console.WriteLine($"Yes, sum = {sumRight}");
             }

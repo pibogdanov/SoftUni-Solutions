@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _03.PassedOrFailed
+namespace _02.Passed
 {
     internal class Program
     {
@@ -8,14 +8,9 @@ namespace _03.PassedOrFailed
         {
             double grade = double.Parse(Console.ReadLine());
 
-            if (3 <= grade)
+            if (grade > 2.99)
             {
                 Console.WriteLine("Passed!");
-            }
-
-            else
-            {
-                Console.WriteLine("Failed!");
             }
         }
     }

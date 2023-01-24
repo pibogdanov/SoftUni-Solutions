@@ -8,9 +8,9 @@ namespace _10.OddEvenSum
         {
             int numbersCount = int.Parse(Console.ReadLine());
 
-            int oddSum = 0;
-
             int evenSum = 0;
+
+            int oddSum = 0;
 
             for (int i = 0; i < numbersCount; i++)
             {

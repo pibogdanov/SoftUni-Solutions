@@ -9,7 +9,7 @@ namespace _04.ReverseString
         {
             string input = Console.ReadLine();
 
-            string reversedInput = new (input.Reverse().ToArray());
+            string reversedInput = new string(input.Reverse().ToArray());
             Console.WriteLine(reversedInput);
         }
     }

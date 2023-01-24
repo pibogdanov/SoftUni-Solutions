@@ -24,9 +24,7 @@ namespace _07.Shopping
 
             if (numberOfProcessors < numberOfVideoCards)
             {
-                double discount = totalPrice * 0.15;
-
-                totalPrice -= discount;
+                totalPrice *= 0.85;
             }
 
             if (totalPrice > budget)

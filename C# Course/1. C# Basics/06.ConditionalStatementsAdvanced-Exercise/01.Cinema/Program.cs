@@ -6,12 +6,6 @@ namespace _01.Cinema
     {
         static void Main(string[] args)
         {
-            double premiere = 12;
-
-            double normal = 7.5;
-
-            double discount = 5;
-
             string movieType = Console.ReadLine();
 
             int rows = int.Parse(Console.ReadLine());
@@ -22,16 +16,22 @@ namespace _01.Cinema
 
             if (movieType == "Premiere")
             {
+                double premiere = 12;
+
                 income = rows * columns * premiere;
             }
 
             else if (movieType == "Normal")
             {
+                double normal = 7.5;
+
                 income = rows * columns * normal;
             }
 
             else if (movieType == "Discount")
             {
+                double discount = 5;
+
                 income = rows * columns * discount;
             }
 

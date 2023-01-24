@@ -12,7 +12,7 @@ namespace _06.Oscars
 
             int numberOfJuries = int.Parse(Console.ReadLine());
 
-            double points;
+            double points = pointsFromTheAcademy;
 
             for (int i = 0; i < numberOfJuries; i++)
             {
@@ -20,17 +20,13 @@ namespace _06.Oscars
 
                 double pointsFromAJury = double.Parse(Console.ReadLine());
 
-                pointsFromTheAcademy += nameOfAJury.Length * pointsFromAJury / 2;
-
-                points = pointsFromTheAcademy;
+                points += nameOfAJury.Length * pointsFromAJury / 2;
 
                 if (points > 1250.49)
                 {
                     break;
                 }
             }
-
-            points = pointsFromTheAcademy;
 
             if (points > 1250.49)
             {

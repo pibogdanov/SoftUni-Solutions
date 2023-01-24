@@ -6,8 +6,6 @@ namespace _07.WaterOverflow
     {
         static void Main(string[] args)
         {
-            int waterTankCapacity = 255;
-
             int litersCount = int.Parse(Console.ReadLine());
 
             int sum = 0;
@@ -15,6 +13,8 @@ namespace _07.WaterOverflow
             for (int i = 0; i < litersCount; i++)
             {
                 int litersToPour = int.Parse(Console.ReadLine());
+
+                int waterTankCapacity = 255;
 
                 if (litersToPour <= waterTankCapacity - sum)
                 {

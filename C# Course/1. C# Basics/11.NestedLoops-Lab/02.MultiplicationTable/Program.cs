@@ -11,7 +11,6 @@ namespace _02.MultiplicationTable
                 for (int j = 1; j < 11; j++)
                 {
                     int result = i * j;
-
                     Console.WriteLine($"{i} * {j} = {result}");
                 }
             }

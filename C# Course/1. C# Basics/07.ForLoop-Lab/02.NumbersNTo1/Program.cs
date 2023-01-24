@@ -6,9 +6,9 @@ namespace _02.NumbersNTo1
     {
         static void Main(string[] args)
         {
-            int startingNumber = int.Parse(Console.ReadLine());
+            int start = int.Parse(Console.ReadLine());
 
-            for (int i = startingNumber; i > 0; i--)
+            for (int i = start; i > 0; i--)
             {
                 Console.WriteLine(i);
             }
