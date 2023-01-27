@@ -13,7 +13,7 @@ namespace _08.CondenseArrayToNumber
             {
                 for (int j = 0; j < numbers.Length - 1; j++)
                 {
-                    numbers[j] = numbers[j] + numbers[j + 1];
+                    numbers[j] += numbers[j + 1];
                 }
             }
 
