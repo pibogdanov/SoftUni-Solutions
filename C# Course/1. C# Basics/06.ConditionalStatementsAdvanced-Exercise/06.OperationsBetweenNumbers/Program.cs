@@ -6,82 +6,82 @@ namespace _06.OperationsBetweenNumbers
     {
         static void Main(string[] args)
         {
-            int number1 = int.Parse(Console.ReadLine());
+            int numberOne = int.Parse(Console.ReadLine());
 
-            int number2 = int.Parse(Console.ReadLine());
+            int numberTwo = int.Parse(Console.ReadLine());
 
-            string calculationType = Console.ReadLine();
+            char calculationType = char.Parse(Console.ReadLine());
 
-            if (calculationType == "+")
+            if (calculationType == '+')
             {
-                double result = number1 + number2;
+                double result = numberOne + numberTwo;
 
                 if (result % 2 == 0)
                 {
-                    Console.WriteLine($"{number1} + {number2} = {result} - even");
+                    Console.WriteLine($"{numberOne} {calculationType} {numberTwo} = {result} - even");
                 }
 
                 else
                 {
-                    Console.WriteLine($"{number1} + {number2} = {result} - odd");
+                    Console.WriteLine($"{numberOne} {calculationType} {numberTwo} = {result} - odd");
                 }
             }
 
-            else if (calculationType == "-")
+            else if (calculationType == '-')
             {
-                double result = number1 - number2;
+                double result = numberOne - numberTwo;
 
                 if (result % 2 == 0)
                 {
-                    Console.WriteLine($"{number1} - {number2} = {result} - even");
+                    Console.WriteLine($"{numberOne} {calculationType} {numberTwo} = {result} - even");
                 }
 
                 else
                 {
-                    Console.WriteLine($"{number1} - {number2} = {result} - odd");
+                    Console.WriteLine($"{numberOne} {calculationType} {numberTwo} = {result} - odd");
                 }
             }
 
-            else if (calculationType == "*")
+            else if (calculationType == '*')
             {
-                double result = number1 * number2;
+                double result = numberOne * numberTwo;
 
                 if (result % 2 == 0)
                 {
-                    Console.WriteLine($"{number1} * {number2} = {result} - even");
+                    Console.WriteLine($"{numberOne} {calculationType} {numberTwo} = {result} - even");
                 }
 
                 else
                 {
-                    Console.WriteLine($"{number1} * {number2} = {result} - odd");
+                    Console.WriteLine($"{numberOne} {calculationType} {numberTwo} = {result} - odd");
                 }
             }
 
-            else if (calculationType == "/")
+            else if (calculationType == '/')
             {
-                if (number2 == 0)
+                if (numberTwo == 0)
                 {
-                    Console.WriteLine($"Cannot divide {number1} by zero");
+                    Console.WriteLine($"Cannot divide {numberOne} by zero");
                 }
 
                 else
                 {
-                    double result = number1 * 1.0 / number2;
-                    Console.WriteLine($"{number1} / {number2} = {result:F2}");
+                    double result = 1.0 * numberOne / numberTwo;
+                    Console.WriteLine($"{numberOne} {calculationType} {numberTwo} = {result:F2}");
                 }
             }
 
-            else if (calculationType == "%")
+            else if (calculationType == '%')
             {
-                if (number2 == 0)
+                if (numberTwo == 0)
                 {
-                    Console.WriteLine($"Cannot divide {number1} by zero");
+                    Console.WriteLine($"Cannot divide {numberOne} by zero");
                 }
 
                 else
                 {
-                    double result = number1 % number2;
-                    Console.WriteLine($"{number1} % {number2} = {result}");
+                    double result = numberOne % numberTwo;
+                    Console.WriteLine($"{numberOne} {calculationType} {numberTwo} = {result}");
                 }
             }
         }
